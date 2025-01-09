@@ -7,13 +7,14 @@ namespace Phun;
 use function iterator_to_array;
 
 /**
+ * @template Key of array-key
  * @template T
  * @template U
- * @param iterable<T> $collection1
- * @param iterable<U> $collection2
- * @return list<array{T, U|null}>
+ * @param iterable<Key, T> $collection1
+ * @param iterable<Key, U> $collection2
+ * @return array<Key, array{T, U|null}>
  */
-function zip(
+function zipWithKeys(
 	iterable $collection1,
 	iterable $collection2,
 ): array
@@ -23,7 +24,7 @@ function zip(
 	$result = [];
 
 	foreach ($collection1 as $key => $value) {
-		$result[] = [$value, $array2[$key] ?? null];
+		$result[$key] = [$value, $array2[$key] ?? null];
 	}
 
 	return $result;
