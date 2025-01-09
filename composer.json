@@ -1,0 +1,38 @@
+{
+	"name": "jiripudil/phun",
+	"description": "Modern functional collection utilities for PHP.",
+	"type": "library",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Jiří Pudil",
+			"email": "me@jiripudil.cz",
+			"homepage": "https://jiripudil.cz"
+		}
+	],
+	"require": {
+		"php": "^8.2"
+	},
+	"require-dev": {
+		"nette/tester": "^2.5",
+		"phpstan/extension-installer": "^1.4",
+		"phpstan/phpstan": "^2.1",
+		"phpstan/phpstan-strict-rules": "^2.0"
+	},
+	"scripts": {
+		"phpstan": "phpstan",
+		"tests": "tester -C tests/",
+		"tests-with-coverage": "tester -C --coverage coverage.xml --coverage-src src/ tests/"
+	},
+	"autoload": {
+		"files": [
+			"index.php"
+		]
+	},
+	"config": {
+		"sort-packages": true,
+		"allow-plugins": {
+			"phpstan/extension-installer": true
+		}
+	}
+}
