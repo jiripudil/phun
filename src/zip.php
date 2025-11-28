@@ -9,8 +9,8 @@ use function iterator_to_array;
 /**
  * @template T
  * @template U
- * @param iterable<T> $collection1
- * @param iterable<U> $collection2
+ * @param iterable<array-key, T> $collection1
+ * @param iterable<array-key, U> $collection2
  * @return list<array{T, U|null}>
  */
 function zip(
