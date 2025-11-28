@@ -1,6 +1,6 @@
 # Phun
 
-[![Build Status](https://img.shields.io/github/actions/workflow/status/jiripudil/phun/test.yml?branch=main)](https://github.com/jiripudil/phun/actions?query=workflow%3ATest)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/jiripudil/phun/test.yml?branch=main)](https://github.com/jiripudil/phun/actions/workflows/test.yml)
 [![Code Coverage](https://img.shields.io/codecov/c/github/jiripudil/phun.svg)](https://codecov.io/gh/jiripudil/phun)
 [![latest version](https://img.shields.io/packagist/v/jiripudil/phun)](https://packagist.org/packages/jiripudil/phun)
 [![license](https://img.shields.io/packagist/l/jiripudil/phun)](https://packagist.org/packages/jiripudil/phun)
